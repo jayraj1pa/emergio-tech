@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background-image: url("./images//cecilie_stenspil_as_eivor_varinsdottir_rosta_magnus_bruun_as_male_eivor_varin_odin_4k_hd_assassins_creed_valhalla-3840x2160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 19%;
+  }
+  
+  .navbar {
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  img {
+    width: 30%;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-list a:hover {
+    color: #ffcc00; 
+  }
+  
+  .hamburger {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .nav-list {
+      display: none; 
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .nav-list.show {
+      display: flex;
+    }
+  
+    .nav-list li {
+      margin: 10px 0;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
+  p {
+    margin-left: 650px;
+    margin-top: 300px;
+    color: #c6a133;
+  }
+  
+  @media (max-width: 1020px) {
+    p {
+      margin-left: 450px;
+      margin-top: 250px;
+    }
+  }
+  
+  @media (max-width: 740px) {
+    p {
+      margin-left: 20px;
+      margin-top: 220px;
+
+    }
+  }
+  
+
+  @media (max-width:300px){
+   
+   p{ display: none;
+  }}
